@@ -16,14 +16,14 @@ let files = [entryBundle].concat(testSrc).concat(appSrc);
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: [project.testFramework.id],
+    frameworks: [project.testFramework.id, 'sinon'],
     files: files,
     exclude: [],
     preprocessors: {
       [project.unitTestRunner.source]: [project.transpiler.id]
     },
     'babelPreprocessor': { options: project.transpiler.options },
-    reporters: ['progress'],
+    reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
