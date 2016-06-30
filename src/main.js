@@ -1,7 +1,7 @@
 import environment from './environment';
+import {BookService} from './services/book-service';
+import {Datacontext} from './services/datacontext';
 
-//Configure Bluebird Promises.
-//Note: You may want to use environment-specific configuration.
 Promise.config({
   warnings: {
     wForgottenReturn: false
@@ -10,6 +10,8 @@ Promise.config({
 
 export function configure(aurelia) {
   aurelia.use
+    .singleton('BookService', BookService)
+    .singleton('Datacontext', Datacontext)
     .standardConfiguration()
     .feature('resources');
 
