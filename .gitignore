@@ -4,3 +4,4 @@ node_modules
 scripts/vendor-bundle.js
 scripts/app-bundle.js
 scripts/app-bundle.js.map
+*.todo
