@@ -6,7 +6,7 @@ import build from './build';
 import {CLIOptions} from 'aurelia-cli';
 
 function onChange(path) {
-  console.log(`File Changed: ${path}`);
+  console.log(`File Changed: ${path}`); // eslint-disable-line no-console
 }
 
 function reload(done) {
@@ -31,8 +31,8 @@ let serve = gulp.series(
       }
     }, (err, bs) => {
       let urls = bs.options.get('urls').toJS();
-      console.log(`Application Available At: ${urls.local}`);
-      console.log(`BrowserSync Available At: ${urls.ui}`);
+      console.log(`Application Available At: ${urls.local}`); // eslint-disable-line no-console
+      console.log(`BrowserSync Available At: ${urls.ui}`); // eslint-disable-line no-console
       done();
     });
   }
