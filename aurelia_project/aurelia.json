@@ -2,8 +2,8 @@
   "name": "au-books",
   "type": "project:application",
   "platform": {
-    "id": "default",
-    "displayName": "Default",
+    "id": "web",
+    "displayName": "Web",
     "output": "scripts"
   },
   "transpiler": {
@@ -53,8 +53,8 @@
   "build": {
     "targets": [
       {
-        "id": "default",
-        "displayName": "Default",
+        "id": "web",
+        "displayName": "Web",
         "output": "scripts"
       }
     ],
@@ -96,7 +96,6 @@
           "aurelia-bootstrapper",
           "aurelia-dependency-injection",
           "aurelia-event-aggregator",
-          "aurelia-fetch-client",
           "aurelia-framework",
           "aurelia-history",
           "aurelia-history-browser",
