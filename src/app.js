@@ -4,7 +4,6 @@ export class App {
     config.map([
       { route: '', name: 'home', moduleId: 'routes/index', nav: true, title: 'Home' }
     ]);
-    config.options.pushState = true;
     this.router = router;
   }
 }
