@@ -1,0 +1,5 @@
+<template>
+  <ul show.bind="model.books.length">
+    <li repeat.for="book of model.books">${book.title}</li>
+  </ul>
+</template>
