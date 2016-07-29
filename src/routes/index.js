@@ -1,9 +1,12 @@
 import {inject} from 'aurelia-framework';
+import {Datacontext} from '../services/datacontext';
+import {BookListModel} from '../vvm/book-list/model';
 
-@inject('Datacontext')
+@inject(Datacontext, BookListModel)
 export class Index {
-  constructor(datacontext) {
+  constructor(datacontext, bookListModel) {
     this.datacontext = datacontext;
+    this.bookListModel = bookListModel;
   }
 
   activate() {
@@ -12,6 +15,6 @@ export class Index {
   }
 
   created() {
-    this.books = this.datacontext.books;
+    this.bookListModel.books = this.datacontext.books;
   }
 }

@@ -1,6 +1,6 @@
 <template>
+  <require from="../vvm/book-list/index"></require>
+
   <h1>Hello world</h1>
-  <ul if.bind="books.length">
-    <li repeat.for="book of books">${book.title}</li>
-  </ul>
+  <book-list></book-list>
 </template>
