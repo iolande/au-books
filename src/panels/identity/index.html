@@ -7,7 +7,7 @@
 
     <text-input
       label="First name"
-      value.two-way="model.firstName"
+      value.two-way="model.firstName | properCase & throttle"
     ></text-input>
 
     <text-input
