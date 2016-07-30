@@ -1,4 +1,6 @@
-<template>
-  <label for="$id">$label</label>
-  <input type="text" value.bind="value" id="$id" ref="field">
+<template class="form-group">
+  <require from="./text-input.css"></require>
+
+  <label for="${id}">${label}</label>
+  <input type="text" value.bind="value" id="${id}" class="form-control">
 </template>

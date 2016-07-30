@@ -1,8 +1,23 @@
 <template>
+  <require from="./style.css"></require>
+
   <fieldset>
-    <legend>Name</legend>
+    <legend>Identity</legend>
     ${model.firstName} ${model.middleName} ${model.lastName}
 
-    <text-input></text-input>
+    <text-input
+      label="First name"
+      value.two-way="model.firstName"
+    ></text-input>
+
+    <text-input
+      label="Middle name"
+      value.two-way="model.middleName"
+    ></text-input>
+
+    <text-input
+      label="Last name"
+      value.two-way="model.lastName"
+    ></text-input>
   </fieldset>
 </template>

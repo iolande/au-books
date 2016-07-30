@@ -1,4 +1,7 @@
 <template>
+  <require from="./style.css"></require>
+
+  <h2>List of books</h2>
   <ul show.bind="model.books.length">
     <li repeat.for="book of model.books">${book.title}</li>
   </ul>
