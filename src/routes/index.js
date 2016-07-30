@@ -1,6 +1,6 @@
 import {inject} from 'aurelia-framework';
 import {Datacontext} from '../services/datacontext';
-import {BookListModel} from '../vvm/book-list/model';
+import {BookListModel} from '../panels/book-list/model';
 
 @inject(Datacontext, BookListModel)
 export class Index {
