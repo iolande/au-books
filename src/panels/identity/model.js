@@ -15,7 +15,8 @@ export class IdentityModel {
     max: 40,
     isValid: true,
     status: null,
-    message: null
+    message: null,
+    pattern: '[a-zA-Z]'
   };
 
   _lastName = {

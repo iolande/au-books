@@ -1,23 +1,26 @@
 <template>
   <require from="./style.css"></require>
 
-  <fieldset>
-    <legend>Identity</legend>
-    ${model.firstName} ${model.middleName} ${model.lastName}
+  <form action="index_submit" method="get" accept-charset="utf-8" novalidate>
+    <fieldset>
+      <legend>Identity</legend>
+      <p>${model.firstName} ${model.middleName} ${model.lastName}.</p>
 
-    <text-input
-      label="First name"
-      value.two-way="model.firstName | properCase & throttle"
-    ></text-input>
+      <text-input
+        label="First name"
+        value.two-way="model.firstName | properCase"
+      ></text-input>
 
-    <text-input
-      label="Middle name"
-      value.two-way="model.middleName"
-    ></text-input>
+      <text-input
+        label="Middle name"
+        value.two-way="model.middleName | alpha:middleName"
+        ref="middleName"
+      ></text-input>
 
-    <text-input
-      label="Last name"
-      value.two-way="model.lastName"
-    ></text-input>
-  </fieldset>
+      <text-input
+        label="Last name"
+        value.two-way="model.lastName"
+      ></text-input>
+    </fieldset>
+  </form>
 </template>
