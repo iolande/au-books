@@ -1,0 +1,21 @@
+<template>
+  <require from="./style.css"></require>
+
+  <form action="index_submit" method="get" accept-charset="utf-8" novalidate>
+    <fieldset>
+      <legend>Identity</legend>
+      <p>${model.nameConversion} ${model.alphaConversion}</p>
+
+      <text-input
+        label="Name conversion"
+        value.two-way="model.nameConversion | properCase"
+      ></text-input>
+
+      <text-input
+        label="Alpha Conversion"
+        value.two-way="model.alphaConversion | alpha:alphaConversion"
+        ref="alphaConversion"
+      ></text-input>
+    </fieldset>
+  </form>
+</template>
