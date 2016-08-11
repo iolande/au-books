@@ -49,6 +49,6 @@
     "minimatch": "^3.0.2",
     "sinon": "^1.17.4",
     "through2": "^2.0.1",
-    "uglify-js": "^2.6.3",
+    "uglify-js": "^2.6.3"
   }
 }
