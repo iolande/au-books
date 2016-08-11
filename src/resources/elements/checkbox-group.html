@@ -1,0 +1,17 @@
+<template>
+  <require from="./checkbox-group.css"></require>
+
+  <div class="form-check ${option.disabled} ? 'disabled' : ''" repeat.for="option of options">
+    <label class="form-check-label">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        model.bind="option"
+        checked.bind="selected"
+        disabled.bind="option.disabled"
+      >
+      ${option.label}
+    </label>
+  </div>
+</template>
+
