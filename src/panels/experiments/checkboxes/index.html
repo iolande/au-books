@@ -1,0 +1,16 @@
+<template>
+  <form class="card">
+    <fieldset>
+      <legend class="card-header">Social media</legend>
+      <div class="card-block">
+        <checkbox-group
+          selected.bind="model.checkboxSelected"
+          options.one-time="checkboxOptions"
+        ></checkbox-group>
+      </div>
+      <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary pull-xs-right" click.trigger="checkboxSave()">Save socmed</button>
+      </div>
+    </fieldset>
+  </form>
+</template>
