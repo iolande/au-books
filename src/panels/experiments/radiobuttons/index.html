@@ -1,0 +1,16 @@
+<template>
+  <form class="card">
+    <fieldset>
+      <legend class="card-header">Best contact method</legend>
+      <div class="card-block">
+        <radio-group
+          selected.bind="model.radioSelected"
+          options.one-time="radioOptions"
+        ></radio-group>
+      </div>
+      <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary pull-xs-right" click.trigger="radioSave()">Save contact</button>
+      </div>
+    </fieldset>
+  </form>
+</template>
