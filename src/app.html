@@ -1,6 +1,8 @@
 <template>
   <require from="./app.css"></require>
-  <navigation router.bind="router" containerless></navigation>
+  <navigation router.bind="router" class="navbar-fixed-top navbar-dark bg-inverse navbar-fixed-top">
+    <a class="navbar-brand" href="#">${router.title}</a>
+  </navigation>
 
   <main class="page-host container">
     <router-view containerless></router-view>
