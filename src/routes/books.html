@@ -1,7 +1,12 @@
 <template>
+  <navigation router.bind="router"></navigation>
+
   <h1>Books</h1>
 
   <p>This will have child nav</p>
   <p>Display up to 5 book links in the nav bar (contrived so I can play with child routers)</p>
   <p>Then a link for "Add a book" if there are fewer than 5</p>
+
+  <!-- <router-view name="sidebar"></router-view> -->
+  <router-view></router-view>
 </template>
