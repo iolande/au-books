@@ -1,16 +1,14 @@
-// import {computedFrom} from 'aurelia-framework';
+import {computedFrom} from 'aurelia-framework';
 
 export class BestContactModel {
-  radioSelected = { label: 'Phone', value: 'landline' }
+  radioSelected = { label: null, value: null }
 
-  // @computedFrom('radioSelected')
-  // get selectedValues() {
-  //   const selectedValues = [];
+  @computedFrom('radioSelected')
+  get selectedValue() {
+    return this.radioSelected.value;
+  }
 
-  //   this.radioSelected.forEach(option => {
-  //     selectedValues.push(option.value);
-  //   });
-
-  //   return selectedValues;
-  // }
+  set selectedValue(value) {
+    this.radioSelected.value = value;
+  }
 }
