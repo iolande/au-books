@@ -2,8 +2,5 @@
   <require from="./text-input.css"></require>
   ${message}
   <label for="${id}">${label}</label>
-  <input type="text" value.bind="value" id="${id}" class="form-control" ref="field">
-
-  <!-- [a-zA-Z][-a-zA-Z'\s]* -->
-   <!-- pattern="[a-zA-Z][-'a-zA-Z\s]*" -->
+  <input type="text" value.bind="value" id="${id}" class="form-control" ref="field" keypress.delegate="processChange($this, $event)">
 </template>

@@ -7,16 +7,16 @@ export class TextInput {
 
   id = uniqueID();
 
-  attached() {
-    // debugger;
-    // console.log(this.field);
-  }
-
   valueChanged(newValue, oldValue) {
     // if (this.field && this.field.validity.valid) {
     //   this.message = '';
     // } else {
     //   this.message = 'NOPE - bad user.';
     // }
+  }
+
+  processChange(event) {
+    if (!this.model.format) { return true; }
+    return this.model.format.test(event.key);
   }
 }

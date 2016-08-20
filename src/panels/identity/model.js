@@ -1,3 +1,5 @@
+import constants from '../../constants';
+
 export class IdentityModel {
   _firstName = {
     value: null,
@@ -6,7 +8,8 @@ export class IdentityModel {
     max: 40,
     isValid: true,
     status: null,
-    message: null
+    message: null,
+    format: constants.PATTERNS.NAME
   };
 
   _middleName = {
