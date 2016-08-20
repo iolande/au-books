@@ -5,12 +5,6 @@ export class SocialMediaModel {
 
   @computedFrom('checkboxSelected')
   get selectedValues() {
-    const selectedValues = [];
-
-    this.checkboxSelected.forEach(option => {
-      selectedValues.push(option.value);
-    });
-
-    return selectedValues;
+    return this.checkboxSelected.map(cbx => cbx.value);
   }
 }
