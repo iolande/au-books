@@ -14,7 +14,7 @@
   },
   "peerDependencies": {},
   "devDependencies": {
-    "aurelia-cli": "^0.17.0",
+    "aurelia-cli": "^0.18.0",
     "aurelia-testing": "^1.0.0-beta.2.0.0",
     "aurelia-tools": "^0.2.4",
     "babel-eslint": "^6.0.4",
@@ -42,13 +42,14 @@
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",
     "karma-babel-preprocessor": "^6.0.1",
-    "karma-chrome-launcher": "^1.0.1",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
-    "karma-jasmine-html-reporter": "^0.2.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
     "karma-sinon": "^1.0.5",
     "minimatch": "^3.0.2",
     "sinon": "^1.17.4",
     "through2": "^2.0.1",
-    "uglify-js": "^2.6.3"
+    "vinyl-fs": "^2.4.3",
+    "uglify-js": "^2.7.3"
   }
 }
