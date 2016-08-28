@@ -16,7 +16,6 @@ export class TextInput {
   }
 
   processChange(event) {
-    if (!this.model.format) { return true; }
-    return this.model.format.test(event.key);
+    return !!this.model.format ? this.model.format.test(event.key) : true;
   }
 }

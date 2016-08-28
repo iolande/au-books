@@ -18,7 +18,7 @@ export class Datacontext {
   getBooksByGenre(genre) {
     if (this.books.length > 0) {
       // filter cached array by genre & return
-      let filteredArray = this.books.filter(book => {
+      const filteredArray = this.books.filter(book => {
         return book.genre.toLowerCase() === genre.toLowerCase();
       });
 
