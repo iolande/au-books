@@ -1,11 +1,16 @@
 import {inject} from 'aurelia-framework';
 
-@inject('BookService')
+@inject('BookService', 'InteractionService')
 export class Datacontext {
   books = [];
 
-  constructor(bookService) {
+  constructor(bookService, interactionService) {
     this.bookService = bookService;
+    this.interactionService = interactionService;
+  }
+
+  createNewUserInteraction() {
+    return this.interactionService.createNewUserInteraction();
   }
 
   getBooks() {

@@ -17,4 +17,9 @@ export class Index {
   created() {
     this.bookListModel.books = this.datacontext.books;
   }
+
+  makeInteractionCall() {
+    this.datacontext.createNewUserInteraction()
+    .then(response => console.log(response));
+  }
 }
